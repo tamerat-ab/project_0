@@ -16,20 +16,36 @@
     #g-1{color:rgb(0,94,255)}
     #l{color:green}
     #e{color:red}
+    #all-words{
+      margin-left:83px;
+      position:relative;
+    }
+ #exact-words{
+  margin-left:1px;
+  position:relative;
+ }
+    #any-words{
+margin-left: 52px;
+position:relative;
+    }
+    #none{
+        margin-left:43px;
+        position:relative;
+    }
 
     </style>
 </head>
 <body>
-<button> <a href="index.html">back</a></button>
+<button> <a href="index.html">Back</a></button>
 
     hello advanced search
     <H1 id="google-icone"><strong id="g" >G</strong><Strong id="o">o</Strong><strong id="o-1">o</strong><strong id="g-1">g</strong><strong id="l">l</strong><strong id="e">e</strong></H1>
 
     <form action="https://www.google.com/search" method="GET">
-       all these words: <input type="text" name="as_q"><br>
-       this exact word or phrase: <input type="text" name="as_epq"><br>
-       any of these words: <input type="text" name="as_oq"><br>
-        none of these words :<input type="text" name="as_eq"><br>
+       All these words: <input id="all-words" type="text" name="as_q"><br>
+       This exact word or phrase: <input id="exact-words" type="text" name="as_epq"><br>
+       Any of these words: <input id="any-words" type="text" name="as_oq"><br>
+        None of these words :<input id="none" type="text" name="as_eq"><br>
         <input type="submit" value="Advanced search">
 
     </form>
